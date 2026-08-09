@@ -1,40 +1,281 @@
 # 🖥️ Sam Cloud IDE
 
-A modern **browser-based Integrated Development Environment (IDE)** designed to bring essential development tools directly into the web browser.
+A powerful **browser-based development environment** built to bring a real IDE experience directly into your browser.
 
-**Sam Cloud IDE** provides a lightweight coding workspace with a file explorer, code editor, terminal, live preview, Python execution, project management tools, and a modern developer-focused interface.
+**Sam Cloud IDE** is designed like a lightweight, browser-native alternative to traditional desktop development environments such as VS Code. It combines a professional code editor, file explorer, terminal, live preview, multiple programming languages, package management, webcam support, and an AI coding assistant into one unified workspace.
 
-> 🚀 **Write code. Run code. Preview projects. All from your browser.**
+> 🚀 **Write code. Install packages. Run projects. Preview applications. Get AI assistance — all from one browser-based IDE.**
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### ⚡ Code Editor
+## ⚡ Real IDE-Style Code Editor
 
-* Monaco Editor-powered coding experience
-* Syntax highlighting
-* Multi-file editing
-* File tabs
-* Code editing and navigation
-* Support for modern web development workflows
-* Configurable editor interface
+Sam Cloud IDE is designed to provide a development experience similar to a modern desktop IDE.
 
-### 📁 File Explorer
+### Features include:
 
-* Browse project files
-* Create files
-* Create folders
-* Open files directly in the editor
-* Manage workspace content
-* File and folder navigation
-* Integrated project workspace
+* 📝 Monaco-based code editor
+* 📑 Multiple file tabs
+* 📂 Project file explorer
+* 🔍 Code navigation
+* 🎨 Syntax highlighting
+* 🧩 Multi-language support
+* ⚙️ Editor settings
+* 💾 Save / Save All
+* ▶️ Run
+* ⏹️ Stop
+* 📥 Download
+* 📤 Upload
+* 🖥️ Multi-panel development workspace
 
-### 💻 Built-in Terminal
+The goal is to make the browser feel like a **real development workstation** rather than a simple online code editor.
 
-Sam Cloud IDE includes an integrated browser-based terminal experience.
+---
 
-Supported commands include:
+# 🌍 Multi-Language Development
+
+Sam Cloud IDE is designed to work with multiple programming languages and development technologies.
+
+Supported development environments include:
+
+* 🐍 Python
+* 🌐 HTML
+* 🎨 CSS
+* ⚡ JavaScript
+* 🟦 TypeScript
+* 🟢 Node.js
+* 📦 npm-based projects
+* 📦 Package-based JavaScript projects
+
+The architecture is designed to allow additional languages and runtimes to be added in the future.
+
+---
+
+# 🐍 Python Development
+
+Python execution is supported directly inside the browser using **Pyodide and WebAssembly**.
+
+Example:
+
+```python
+name = "Sam"
+
+print(f"Hello from Sam Cloud IDE!")
+```
+
+The browser-based Python runtime allows Python code to be executed without requiring a traditional local Python installation for supported browser execution.
+
+---
+
+# 🟢 Node.js Development
+
+Sam Cloud IDE is designed to support Node.js-based development workflows.
+
+Developers can work with:
+
+```text
+Node.js
+npm
+JavaScript
+TypeScript
+package.json
+```
+
+This makes the IDE suitable for building and experimenting with modern JavaScript and TypeScript applications.
+
+---
+
+# 📦 Package Installation
+
+One of the major goals of Sam Cloud IDE is to provide a development environment where users can **manage project dependencies directly from the IDE**.
+
+Package-based workflows can include:
+
+```text
+npm install
+npm run
+package.json
+package-lock.json
+```
+
+This allows projects to work with external libraries and dependencies instead of being restricted to completely standalone browser code.
+
+### Example
+
+```bash
+npm install express
+```
+
+or:
+
+```bash
+npm install react
+```
+
+The package management architecture provides a foundation for a more complete browser-based development workflow.
+
+---
+
+# 🤖 AI Coding Assistant
+
+Sam Cloud IDE includes an integrated **AI development assistant powered by the Groq API**.
+
+The AI assistant is designed to work alongside the developer while coding.
+
+Instead of switching between:
+
+```text
+IDE
+   ↓
+Browser
+   ↓
+AI Chat
+   ↓
+Copy Code
+   ↓
+Back to IDE
+```
+
+Sam Cloud IDE aims to provide:
+
+```text
+        ┌─────────────────────────┐
+        │     SAM CLOUD IDE       │
+        ├─────────────────────────┤
+        │                         │
+        │       CODE EDITOR       │
+        │                         │
+        │      Your code...       │
+        │                         │
+        ├─────────────────────────┤
+        │      🤖 AI ASSISTANT    │
+        │                         │
+        │  Analyze current code   │
+        │  Explain                │
+        │  Fix                    │
+        │  Improve                │
+        │  Generate               │
+        └─────────────────────────┘
+```
+
+### AI capabilities
+
+The AI assistant can help with:
+
+* 🤖 Code explanation
+* 🐛 Bug analysis
+* 🔧 Code fixing
+* ✨ Code improvement
+* 📝 Code generation
+* 🔍 Code analysis
+* 💡 Development suggestions
+* 📚 Learning and explanations
+* 🧠 Understanding the code currently being worked on
+
+---
+
+# 🔑 Groq API Configuration
+
+The AI assistant uses the **Groq API**.
+
+Users can configure their API key through the IDE's **Settings** menu.
+
+### Setup
+
+1. Open Sam Cloud IDE.
+2. Open **Settings**.
+3. Find the AI / Groq configuration.
+4. Paste your Groq API key.
+5. Save the configuration.
+6. Open the AI assistant.
+7. Start working with your code.
+
+This allows users to provide their own Groq API credentials instead of requiring a shared API key.
+
+> 🔐 **Security note:** Never publish your Groq API key in source code or commit it to GitHub.
+
+---
+
+# 🧠 AI + Real-Time Coding Workflow
+
+The AI assistant is designed around the code you are actively working on.
+
+Instead of manually copying large sections of code into an external AI service, the IDE can provide the assistant with relevant editor/workspace context.
+
+This enables workflows such as:
+
+```text
+Write Code
+    ↓
+AI Sees Relevant Code
+    ↓
+Ask Question
+    ↓
+AI Analyzes Context
+    ↓
+Get Explanation / Fix / Suggestion
+    ↓
+Continue Coding
+```
+
+This creates a more integrated **AI-powered development experience**.
+
+---
+
+# 📷 Camera / Webcam Integration
+
+Sam Cloud IDE includes **camera/webcam support**.
+
+The browser can request access to the user's webcam through browser permissions.
+
+Possible applications include:
+
+* 📷 Webcam preview
+* 👁️ Computer vision experiments
+* 🤖 AI/ML projects
+* 🧪 Vision-based experiments
+* 🎥 Browser-based development tools
+* 🔬 Future computer vision integrations
+
+The camera functionality provides a foundation for bringing hardware and vision-based experiments into the development environment.
+
+---
+
+# 📁 File Explorer
+
+Sam Cloud IDE includes an interactive project file explorer.
+
+Developers can work with:
+
+* 📄 Files
+* 📁 Folders
+* 📂 Project directories
+* 📝 Multiple files
+* 📑 File tabs
+* 📥 Uploaded files
+* 📤 Downloaded projects
+
+Typical project structure:
+
+```text
+project/
+│
+├── index.html
+├── style.css
+├── script.js
+├── package.json
+└── src/
+```
+
+---
+
+# 💻 Integrated Terminal
+
+Sam Cloud IDE includes a built-in terminal designed to provide a familiar development workflow.
+
+Available workspace commands include:
 
 ```text
 help
@@ -45,32 +286,23 @@ run
 echo
 ```
 
-The terminal is designed to provide quick interaction with the browser-based workspace.
+The terminal is designed to evolve toward a more complete development shell.
 
-### 🐍 Python Runtime
+---
 
-Python execution is powered by **Pyodide**, allowing Python code to run directly inside the browser using WebAssembly.
+# 🌐 Live Preview
 
-Example:
+Web projects can be previewed directly inside the IDE.
 
-```python
-print("Hello from Sam Cloud IDE!")
-```
-
-No separate Python installation is required for browser-based Python execution.
-
-### 🌐 Live Preview
-
-Preview web projects directly inside the IDE.
-
-Supported web technologies include:
+Supported technologies include:
 
 * HTML
 * CSS
 * JavaScript
-* Browser-based web applications
+* TypeScript
+* Browser-based applications
 
-Typical project files:
+Example:
 
 ```text
 index.html
@@ -78,49 +310,105 @@ style.css
 script.js
 ```
 
-### 🛠️ Quick Actions
+The workflow becomes:
 
-The interface provides quick-access controls for common development operations:
+```text
+Edit
+ ↓
+Save
+ ↓
+Run
+ ↓
+Preview
+ ↓
+Debug
+ ↓
+Repeat
+```
 
-* 🆕 New
-* 💾 Save
-* 💾 Save All
-* ▶️ Run
-* ⏹️ Stop
-* 📥 Download
-* 📤 Upload
+---
 
-### 📊 Output & Problems
+# 📊 Output & Problems
 
-Dedicated panels provide feedback while working with projects.
+Sam Cloud IDE includes dedicated development feedback panels.
 
-Includes:
+### Output
 
-* Console output
-* Runtime output
-* Error information
-* Problems/diagnostic information
+View:
 
-### 📷 Webcam Support
+* Program output
+* Runtime messages
+* Development logs
+* Command results
 
-The IDE includes webcam integration support for browser-based functionality and future developer tools.
+### Problems
 
-### ⚙️ Configurable Workspace
+View:
 
-The interface includes settings and layout controls for customizing the development environment.
+* Errors
+* Warnings
+* Diagnostics
+* Development problems
 
-### 🎨 Modern Developer UI
+This provides a workflow closer to a traditional desktop IDE.
 
-Sam Cloud IDE is designed with a modern dark developer interface featuring:
+---
 
-* Dark-themed workspace
-* Developer-focused layout
-* File explorer
-* Editor workspace
-* Terminal
-* Preview panels
-* Output and diagnostics
-* Responsive interface
+# 🛠️ Quick Actions
+
+The IDE provides quick actions for common development tasks.
+
+| Action      | Purpose                   |
+| ----------- | ------------------------- |
+| 🆕 New      | Create a new file/project |
+| 💾 Save     | Save the current file     |
+| 💾 Save All | Save workspace changes    |
+| ▶️ Run      | Execute supported code    |
+| ⏹️ Stop     | Stop execution            |
+| 📥 Download | Download project/files    |
+| 📤 Upload   | Upload files/projects     |
+
+---
+
+# ⚙️ Settings
+
+Sam Cloud IDE includes a configurable settings area.
+
+Settings can be used for development environment preferences and AI configuration.
+
+The Settings system provides a foundation for future features such as:
+
+* 🎨 Editor preferences
+* 🖥️ Layout settings
+* 🤖 AI configuration
+* 🔑 API configuration
+* ⚙️ Runtime settings
+* 🌐 Preview configuration
+
+---
+
+# 🎨 Modern IDE Interface
+
+Sam Cloud IDE is designed with a modern dark developer interface inspired by professional development environments.
+
+The workspace can include:
+
+```text
+┌───────────────────────────────────────────────────────────┐
+│ SAM CLOUD IDE                         ⚙ Settings   🤖 AI │
+├──────────────┬───────────────────────────────┬────────────┤
+│              │                               │            │
+│ FILE         │          EDITOR               │ AI         │
+│ EXPLORER     │                               │ ASSISTANT  │
+│              │       Monaco Editor            │            │
+│ 📁 src       │       code...                 │ Explain    │
+│ 📄 index     │                               │ Fix        │
+│ 📄 main      │                               │ Improve    │
+│              │                               │            │
+├──────────────┴───────────────────────────────┴────────────┤
+│ TERMINAL │ OUTPUT │ PROBLEMS │ PREVIEW │ CAMERA           │
+└───────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -128,65 +416,139 @@ Sam Cloud IDE is designed with a modern dark developer interface featuring:
 
 Sam Cloud IDE is built around one simple idea:
 
-> **What if your development environment could run directly inside your browser?**
+> **What if VS Code-like development could happen directly inside a browser?**
 
-Traditional development environments often require installing multiple tools, runtimes, editors, and dependencies.
-
-Sam Cloud IDE explores a browser-native alternative where developers can:
+Traditional development environments require developers to install and configure:
 
 ```text
-Open Browser
-     ↓
-Open Workspace
-     ↓
-Create / Edit Files
-     ↓
-Run Code
-     ↓
-View Output
-     ↓
-Preview Application
+Code Editor
++
+Runtime
++
+Terminal
++
+Package Manager
++
+Browser
++
+Extensions
++
+AI Tools
++
+Project Tools
 ```
 
-The long-term goal is to evolve Sam Cloud IDE into a complete **browser-native development platform**.
+Sam Cloud IDE aims to bring these capabilities together:
+
+```text
+                SAM CLOUD IDE
+                      │
+       ┌──────────────┼──────────────┐
+       │              │              │
+     Editor         Terminal        AI
+       │              │              │
+       ├──────────────┼──────────────┤
+       │              │              │
+   Languages       Packages       Assistant
+       │              │              │
+       └──────────────┼──────────────┘
+                      │
+                Live Preview
+```
 
 ---
 
-# 🚀 Project Goals
+# 🚀 Why Sam Cloud IDE?
 
-The project is being developed toward a larger browser-based development ecosystem.
+Instead of constantly switching between different development tools, Sam Cloud IDE aims to provide a unified workspace.
 
-Future capabilities may include:
+### Traditional workflow
 
-* 🔐 User authentication
-* ☁️ Cloud project synchronization
-* 🌐 Remote workspaces
-* 💻 Remote terminal
-* 🔑 SSH connectivity
-* 👥 Real-time collaboration
-* 🧪 Integrated testing
-* 🐞 Debugging tools
-* 📦 Package management
-* 🧩 Extensions/plugins
-* 🤖 AI coding assistance
-* 🌍 WebAssembly-powered runtimes
-* 🔄 Git integration
-* 📂 Advanced project management
+```text
+IDE
+ ↓
+Terminal
+ ↓
+Browser
+ ↓
+AI Website
+ ↓
+Documentation
+ ↓
+Back to IDE
+```
+
+### Sam Cloud IDE workflow
+
+```text
+             SAM CLOUD IDE
+                  │
+       ┌──────────┼──────────┐
+       ▼          ▼          ▼
+    Editor     Terminal      AI
+       │          │          │
+       └──────────┼──────────┘
+                  ▼
+             Live Preview
+                  │
+                  ▼
+              Application
+```
+
+---
+
+# 🧩 Core Development Modules
+
+| Module           | Description                            |
+| ---------------- | -------------------------------------- |
+| 📁 File Explorer | Manage project files and folders       |
+| ⚡ Code Editor    | Monaco-based development environment   |
+| 💻 Terminal      | Execute development commands           |
+| 🐍 Python        | Browser-based Python execution         |
+| 🟢 Node.js       | JavaScript/Node development workflows  |
+| 🌐 Web           | HTML/CSS/JS development                |
+| 📦 Packages      | Dependency installation and management |
+| 🌐 Preview       | Live web application preview           |
+| 🤖 AI            | Groq-powered coding assistant          |
+| 📷 Camera        | Browser webcam integration             |
+| 📊 Output        | Runtime and command output             |
+| ⚠️ Problems      | Errors and diagnostics                 |
+| ⚙️ Settings      | Configure the environment              |
+
+---
+
+# 🌍 Supported Development Stack
+
+Sam Cloud IDE is designed for modern development workflows involving:
+
+```text
+Python
+HTML
+CSS
+JavaScript
+TypeScript
+Node.js
+npm
+React
+Vite
+WebAssembly
+```
+
+The architecture is designed to allow additional runtimes and technologies to be integrated over time.
 
 ---
 
 # 🧭 Development Roadmap
 
-## Stage 0 — Foundation
-
-Core browser-based development environment.
+## Stage 0 — Core IDE
 
 * [x] Code editor
 * [x] File explorer
+* [x] File tabs
 * [x] Browser terminal
 * [x] Live preview
 * [x] Python execution
-* [x] File management
+* [x] Camera support
 * [x] Output panel
 * [x] Problems panel
 * [x] Settings
@@ -194,70 +556,67 @@ Core browser-based development environment.
 
 ---
 
-## Stage 1 — Local Development
+## Stage 1 — Developer Environment
 
-Improve the local browser workspace.
-
-* [ ] Persistent workspace storage
-* [ ] Advanced file management
-* [ ] Improved terminal
-* [ ] Project import/export
-* [ ] Workspace backup
-* [ ] Multi-project support
-* [ ] Better error handling
+* [x] Multi-language workflow
+* [x] Node.js development support
+* [x] Package installation workflow
+* [x] Project management
+* [x] File upload/download
+* [x] IDE-style layout
 
 ---
 
-## Stage 2 — Developer Tools
+## Stage 2 — AI Development
 
-Expand the development environment.
+* [x] Groq API integration
+* [x] AI settings
+* [x] API key configuration
+* [x] AI code assistance
+* [x] Code context support
+
+Future:
+
+* [ ] AI code generation
+* [ ] AI debugging
+* [ ] AI refactoring
+* [ ] AI test generation
+* [ ] AI documentation
+* [ ] AI project analysis
+* [ ] AI terminal assistant
+
+---
+
+## Stage 3 — Advanced Developer Tools
 
 * [ ] Git integration
 * [ ] GitHub integration
-* [ ] Package management
+* [ ] Advanced debugging
 * [ ] Integrated testing
-* [ ] Debugging tools
-* [ ] Multiple runtime environments
-* [ ] Advanced terminal commands
+* [ ] Extension system
+* [ ] Advanced package management
+* [ ] More programming language runtimes
 
 ---
 
-## Stage 3 — AI Development
-
-Introduce AI-powered development capabilities.
-
-* [ ] AI code generation
-* [ ] AI code explanation
-* [ ] AI debugging
-* [ ] AI refactoring
-* [ ] AI project analysis
-* [ ] AI terminal assistant
-* [ ] AI documentation generation
-
----
-
-## Stage 4 — Cloud IDE
-
-Transform the project into a cloud development platform.
+## Stage 4 — Cloud Development
 
 * [ ] User authentication
 * [ ] Cloud workspaces
-* [ ] Project synchronization
+* [ ] Cloud project synchronization
 * [ ] Remote execution
-* [ ] Cloud storage
 * [ ] Remote terminal
-* [ ] SSH support
+* [ ] SSH connectivity
+* [ ] Cloud storage
 
 ---
 
 ## Stage 5 — Collaboration
 
-Build collaborative development capabilities.
-
 * [ ] Real-time collaboration
-* [ ] Shared workspaces
+* [ ] Shared projects
 * [ ] Live code editing
-* [ ] Team projects
+* [ ] Team workspaces
 * [ ] Comments
 * [ ] Project permissions
 * [ ] Developer presence
@@ -266,33 +625,35 @@ Build collaborative development capabilities.
 
 # 🛠️ Technologies Used
 
-Sam Cloud IDE is built around modern web technologies.
-
-| Technology       | Purpose                       |
-| ---------------- | ----------------------------- |
-| HTML5            | Web structure                 |
-| CSS3             | Interface styling             |
-| JavaScript       | Browser functionality         |
-| TypeScript       | Application development       |
-| React            | User interface                |
-| Vite             | Development and build tooling |
-| Monaco Editor    | Code editing                  |
-| Pyodide          | Browser-based Python          |
-| WebAssembly      | Browser runtime support       |
-| Fetch API        | Browser communication         |
-| File System APIs | File/workspace interaction    |
+| Technology       | Purpose                      |
+| ---------------- | ---------------------------- |
+| React            | User interface               |
+| TypeScript       | Application development      |
+| Vite             | Development/build tooling    |
+| Monaco Editor    | Professional code editing    |
+| JavaScript       | Browser functionality        |
+| HTML5            | Web development              |
+| CSS3             | Interface styling            |
+| Pyodide          | Python runtime               |
+| WebAssembly      | Browser execution            |
+| Node.js          | JavaScript runtime workflows |
+| npm              | Package management           |
+| Groq API         | AI coding assistant          |
+| Fetch API        | Network communication        |
+| File System APIs | Workspace/file handling      |
+| Web APIs         | Browser capabilities         |
+| Webcam API       | Camera integration           |
 
 ---
 
 # 📂 Project Structure
 
-The current project root contains:
+Current project root:
 
 ```text
 sam-cloud-ide/
 │
 ├── 📁 node_modules/
-│
 ├── 📁 src/
 │
 ├── 📄 .git/
@@ -314,67 +675,43 @@ sam-cloud-ide/
 └── 📄 vite.config.ts
 ```
 
-### Important directories
+### `src/`
 
-#### `src/`
+Contains the main Sam Cloud IDE application source code.
 
-Contains the main application source code.
+### `package.json`
 
-The application UI, components, logic, and development functionality are organized inside this directory.
+Contains project dependencies and npm scripts.
 
-#### `node_modules/`
+### `vite.config.ts`
 
-Contains installed project dependencies.
+Contains Vite configuration.
 
-This directory should normally **not be committed to GitHub**.
+### `tsconfig.json`
 
-#### `.git/`
+Contains TypeScript configuration.
 
-Contains the Git repository metadata.
+### `run.bat`
 
-#### `run.bat`
-
-Windows launcher for starting the project.
-
-#### `package.json`
-
-Contains project metadata, dependencies, and npm scripts.
-
-#### `vite.config.ts`
-
-Vite configuration for the application.
-
-#### `tsconfig.json`
-
-TypeScript configuration.
-
-#### `components.json`
-
-Component configuration used by the project.
+Windows launcher for the development environment.
 
 ---
 
 # ⚙️ Requirements
 
-Before running Sam Cloud IDE, install:
-
 * **Node.js 18+**
-* Windows 10 or Windows 11
+* Windows 10 / 11
 * npm
+* Modern web browser
 
-Node.js can be downloaded from:
+Node.js:
 
 [Node.js Official Website](https://nodejs.org/?utm_source=chatgpt.com)
 
-Verify Node.js:
+Check installation:
 
 ```bash
 node --version
-```
-
-Verify npm:
-
-```bash
 npm --version
 ```
 
@@ -382,19 +719,19 @@ npm --version
 
 # 📥 Installation
 
-## 1. Clone the Repository
+## Clone the repository
 
 ```bash
 git clone https://github.com/rsamwilson2323-cloud/Sam-Cloud-IDE.git
 ```
 
-## 2. Enter the Project
+## Enter the project
 
 ```bash
 cd Sam-Cloud-IDE
 ```
 
-## 3. Install Dependencies
+## Install dependencies
 
 ```bash
 npm install
@@ -402,413 +739,267 @@ npm install
 
 ---
 
-# ▶️ Running the Application
+# ▶️ Run Sam Cloud IDE
 
-Start the Vite development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Vite will display the local development URL in the terminal.
+Then open the URL displayed by Vite.
 
-Typically:
+Usually:
 
 ```text
 http://localhost:5173
 ```
-
-Open the displayed address in your browser.
 
 ---
 
 # 🪟 Windows Launcher
 
-The project also includes:
+Windows users can use:
 
 ```text
 run.bat
 ```
 
-You can start the application on Windows by running:
+Double-click:
 
 ```text
 run.bat
 ```
 
-This provides a convenient way to launch the development environment without manually entering the commands every time.
+to launch the development environment.
 
 ---
 
-# 🌐 Browser Access
+# 📦 Package Workflow
 
-After starting the development server, open the address shown by Vite.
+Projects can work with package-based JavaScript/Node workflows.
 
 Example:
 
-```text
-http://localhost:5173
+```bash
+npm install express
 ```
 
-For local network development, Vite can also be configured to expose the application to other devices on the same network.
-
-Example:
-
-```text
-http://YOUR-IP:5173
-```
-
----
-
-# 🧪 Running Code
-
-Sam Cloud IDE is designed to allow code execution directly from the browser.
-
-### JavaScript
-
-```javascript
-console.log("Hello from Sam Cloud IDE!");
-```
-
-### Python
-
-```python
-name = "Sam"
-print(f"Hello, {name}!")
-```
-
-Python execution is powered by Pyodide and WebAssembly.
-
----
-
-# 🌐 Live Web Development
-
-A typical web project can contain:
-
-```text
-index.html
-style.css
-script.js
-```
-
-Example:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sam Cloud IDE</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
-</html>
-```
-
-The Live Preview system allows developers to view their web application while working on the project.
-
----
-
-# 💻 Virtual Terminal
-
-The browser terminal provides basic workspace commands.
-
-```text
-help
-```
-
-Displays available commands.
-
-```text
-ls
-```
-
-Lists workspace files.
-
-```text
-cat
-```
-
-Displays file contents.
-
-```text
-echo Hello
-```
-
-Prints text.
-
-```text
-clear
-```
-
-Clears terminal output.
-
-```text
-run
-```
-
-Runs the current supported project/code.
-
----
-
-# 🧩 Main Components
-
-Sam Cloud IDE is centered around several development panels:
-
-```text
-┌──────────────────────────────────────────────────────┐
-│                 SAM CLOUD IDE                        │
-├──────────────┬─────────────────────┬─────────────────┤
-│              │                     │                 │
-│    FILES     │      CODE EDITOR    │   DEVELOPMENT   │
-│              │                     │      TOOLS      │
-│  Explorer    │   Monaco Editor     │   Terminal      │
-│  Workspace   │   File Tabs         │   Preview       │
-│              │                     │   Output        │
-│              │                     │   Problems      │
-├──────────────┴─────────────────────┴─────────────────┤
-│              Console / Output / Problems              │
-└──────────────────────────────────────────────────────┘
-```
-
----
-
-# 📁 Workspace Management
-
-The IDE is designed around a virtual development workspace.
-
-Developers can work with:
-
-* Files
-* Folders
-* Multiple files
-* Code tabs
-* Project assets
-* Uploaded files
-* Downloaded projects
-
-The workspace architecture provides a foundation for future cloud synchronization.
-
----
-
-# 🔒 Privacy & Local Development
-
-Sam Cloud IDE is designed to support browser-based local development.
-
-Depending on the functionality being used, files and code can be processed directly within the browser.
-
-No cloud account is required for the basic local development experience.
-
-> **Important:** Browser permissions, network access, and external services may vary depending on the functionality being used.
-
----
-
-# 📱 Responsive Development
-
-The interface is designed to work across modern devices and screen sizes.
-
-Target environments include:
-
-* 💻 Desktop
-* 🖥️ Laptop
-* 📱 Tablet
-* 🌐 Modern browsers
-
-For the best coding experience, a desktop or laptop browser is recommended.
-
----
-
-# 🧪 Testing
-
-Sam Cloud IDE includes development output and diagnostic capabilities.
-
-Developers can use:
-
-* Console output
-* Problems panel
-* Runtime messages
-* Browser developer tools
-* Vite development server
-
-For development debugging, run:
+Then:
 
 ```bash
 npm run dev
 ```
 
-Then inspect the browser console when required.
-
----
-
-# 🧹 Code Quality
-
-The project includes configuration for modern JavaScript/TypeScript development.
-
-Available project configuration includes:
-
-```text
-eslint.config.js
-.prettierrc
-.prettierignore
-tsconfig.json
-vite.config.ts
-```
-
-These tools help maintain consistent formatting, code quality, and TypeScript configuration.
-
----
-
-# 📦 Package Management
-
-The project currently includes npm package management:
+Package configuration is stored through project files such as:
 
 ```text
 package.json
 package-lock.json
 ```
 
-It also contains Bun configuration:
+---
 
-```text
-bun.lock
-bunfig.toml
-```
+# 🤖 AI Setup
 
-Install dependencies with npm:
+To use the AI assistant:
+
+### 1. Obtain a Groq API key
+
+Create/configure your Groq API access.
+
+### 2. Open Sam Cloud IDE
+
+Start the project:
 
 ```bash
-npm install
+npm run dev
 ```
+
+### 3. Open Settings
+
+Navigate to:
+
+```text
+Settings → AI / Groq
+```
+
+### 4. Paste your API key
+
+Enter your Groq API key into the provided configuration field.
+
+### 5. Save
+
+Save the configuration and open the AI assistant.
+
+### 6. Start coding
+
+Ask the AI to:
+
+```text
+Explain this code
+Find the bug
+Fix this function
+Improve this component
+Generate a solution
+Review my code
+```
+
+---
+
+# 🔐 API Key Security
+
+Your Groq API key is sensitive.
+
+**Never commit API keys to GitHub.**
+
+Do not place secrets directly into:
+
+```text
+README.md
+source files
+public files
+Git commits
+GitHub repositories
+```
+
+Use appropriate environment/configuration mechanisms where applicable.
+
+---
+
+# 📷 Camera Usage
+
+When a feature requires webcam access, your browser may display a permission request.
+
+Select:
+
+```text
+Allow Camera Access
+```
+
+The camera functionality can then be used by supported browser features and future computer-vision tools.
+
+---
+
+# 🧪 Development & Testing
+
+Run:
+
+```bash
+npm run dev
+```
+
+Use the IDE's:
+
+* Console
+* Output
+* Problems
+* Terminal
+* Browser developer tools
+
+to identify and debug issues.
 
 ---
 
 # 🚀 Production Build
 
-Create a production build using:
+Build the project:
 
 ```bash
 npm run build
 ```
 
-Preview the production build using:
+Preview the production build:
 
 ```bash
 npm run preview
 ```
 
-> The exact available scripts are defined in `package.json`.
+The exact scripts are defined in `package.json`.
 
 ---
 
-# 🗺️ Architecture
-
-The current architecture is designed around a browser-based development workflow:
+# 🏗️ Architecture
 
 ```text
-                 ┌─────────────────┐
-                 │     Browser     │
-                 └────────┬────────┘
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │ Sam Cloud IDE   │
-                 └────────┬────────┘
-                          │
-          ┌───────────────┼───────────────┐
-          ▼               ▼               ▼
-     File Explorer    Code Editor      Terminal
-          │               │               │
-          └───────────────┼───────────────┘
-                          ▼
-                  Runtime / Preview
-                          │
-              ┌───────────┴───────────┐
-              ▼                       ▼
-           JavaScript              Python
-                                   Pyodide
-```
-
----
-
-# 💡 Why Sam Cloud IDE?
-
-Traditional development setup can require:
-
-```text
-Editor
-+
-Runtime
-+
-Terminal
-+
-Browser
-+
-Extensions
-+
-Project Management
-```
-
-Sam Cloud IDE aims to bring these experiences together:
-
-```text
-        ┌──────────────────────┐
-        │   SAM CLOUD IDE      │
-        ├──────────────────────┤
-        │ File Explorer        │
-        │ Code Editor          │
-        │ Terminal             │
-        │ Python Runtime       │
-        │ Live Preview         │
-        │ Output               │
-        │ Problems             │
-        │ Settings             │
-        └──────────────────────┘
+                    ┌───────────────────────┐
+                    │       BROWSER         │
+                    └───────────┬───────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │    SAM CLOUD IDE      │
+                    └───────────┬───────────┘
+                                │
+        ┌───────────────┬───────┼────────┬───────────────┐
+        ▼               ▼       ▼        ▼               ▼
+   File Explorer     Editor  Terminal    AI            Camera
+        │               │       │        │               │
+        └───────────────┴───────┼────────┴───────────────┘
+                                │
+             ┌──────────────────┼──────────────────┐
+             ▼                  ▼                  ▼
+          Python              Node.js          Web Stack
+         Pyodide                npm          HTML/CSS/JS
+             │                  │                  │
+             └──────────────────┼──────────────────┘
+                                ▼
+                         Live Preview
 ```
 
 ---
 
-# 🔮 Future Possibilities
-
-The project has the potential to evolve into a complete browser-native development platform.
-
-Possible future features include:
-
-### 🤖 AI Developer
+# 💡 Example Workflow
 
 ```text
-Explain Code
-Fix Bugs
-Generate Code
-Refactor
-Write Tests
-Generate Documentation
-Analyze Project
+Create Project
+      ↓
+Create Files
+      ↓
+Write Code
+      ↓
+Install Packages
+      ↓
+Run Project
+      ↓
+View Output
+      ↓
+AI Reviews Code
+      ↓
+Fix / Improve
+      ↓
+Live Preview
+      ↓
+Build Application
 ```
 
-### ☁️ Cloud Workspace
+---
+
+# 🔮 Future Vision
+
+Sam Cloud IDE aims to become more than a browser code editor.
+
+The long-term vision is a complete **AI-powered browser-native development environment**.
+
+Potential future:
 
 ```text
-Login
-   ↓
-Cloud Workspace
-   ↓
-Projects
-   ↓
-Files
-   ↓
-Run
-   ↓
-Deploy
-```
-
-### 👥 Collaboration
-
-```text
-Developer A ─────┐
-                 ├── Shared Workspace
-Developer B ─────┤
-                 │
-Developer C ─────┘
+                     SAM CLOUD IDE
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+      CODE               AI                CLOUD
+        │                  │                  │
+     Editor            Assistant          Workspace
+     Terminal          Debugging          Storage
+     Runtime           Generation         Sync
+     Packages          Analysis           Deploy
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           │
+                    COLLABORATION
+                           │
+                    Developer Teams
 ```
 
 ---
@@ -820,14 +1011,15 @@ Contributions are welcome!
 You can contribute through:
 
 * 💻 Code
-* 🎨 UI/UX improvements
+* 🎨 UI/UX
 * 🐛 Bug reports
-* 💡 Feature suggestions
+* 💡 Feature ideas
+* 🤖 AI features
 * 🧪 Testing
 * 📝 Documentation
-* 🚀 Performance improvements
+* ⚡ Performance improvements
 
-### Contribution Workflow
+### Development
 
 ```bash
 git clone https://github.com/rsamwilson2323-cloud/Sam-Cloud-IDE.git
@@ -839,26 +1031,26 @@ npm install
 npm run dev
 ```
 
-Create a new branch:
+Create a branch:
 
 ```bash
 git checkout -b feature/your-feature
 ```
 
-Make your changes and commit:
+Commit changes:
 
 ```bash
 git add .
 git commit -m "Add your feature"
 ```
 
-Push the branch:
+Push:
 
 ```bash
 git push origin feature/your-feature
 ```
 
-Then create a Pull Request.
+Then open a Pull Request.
 
 ---
 
@@ -866,7 +1058,7 @@ Then create a Pull Request.
 
 This project is licensed under the **MIT License**.
 
-See the [`LICENSE`](LICENSE) file for details.
+See [`LICENSE`](LICENSE) for details.
 
 ---
 
@@ -874,23 +1066,31 @@ See the [`LICENSE`](LICENSE) file for details.
 
 ## Sam Wilson
 
-Computer Science Engineering student specializing in **Artificial Intelligence & Machine Learning**.
+B.E. Computer Science Engineering student specializing in **Artificial Intelligence & Machine Learning**.
 
-### 🔗 Links
+Passionate about:
 
-🐙 GitHub:
+* 🤖 Artificial Intelligence
+* 🧠 Machine Learning
+* 💻 Full-Stack Development
+* 🛠️ Developer Tools
+* 🔐 Cybersecurity
+* ⚙️ Automation
+* 🚀 Open Source
+
+### 🔗 GitHub
 
 [Sam Wilson on GitHub](https://github.com/rsamwilson2323-cloud?utm_source=chatgpt.com)
 
-💼 LinkedIn:
+### 💼 LinkedIn
 
 [Sam Wilson on LinkedIn](https://www.linkedin.com/in/sam-wilson-14b554385/?utm_source=chatgpt.com)
 
 ---
 
-# 🌟 Support
+# ⭐ Support the Project
 
-If you find **Sam Cloud IDE** interesting or useful:
+If you like **Sam Cloud IDE**:
 
 ⭐ Star the repository
 
@@ -898,17 +1098,16 @@ If you find **Sam Cloud IDE** interesting or useful:
 
 💡 Suggest features
 
-🤝 Contribute to the project
+🤝 Contribute
 
-📢 Share the project with other developers
+📢 Share it with other developers
 
 ---
 
 # 🚀 Sam Cloud IDE
 
-> **Your browser. Your workspace. Your code.**
+> **Code. Run. Build. Debug. Ask AI.**
 
-Built to explore the future of **browser-native development environments**.
+### Your browser. Your IDE. Your AI-powered development workspace.
 
-⭐ **Star the repository if you like the project!**
-
+Built with ❤️ by **Sam Wilson**.
